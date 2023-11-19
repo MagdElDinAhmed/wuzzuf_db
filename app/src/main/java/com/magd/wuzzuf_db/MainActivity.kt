@@ -19,8 +19,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.register.setOnClickListener{
+        binding.jobPostSectors.setOnClickListener{
             val intent = Intent(this, TopSectorsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.demandedSkills.setOnClickListener{
+            val intent = Intent(this, TopSkillsActivity::class.java)
             startActivity(intent)
         }
     }
